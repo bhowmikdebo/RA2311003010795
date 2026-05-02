@@ -1,0 +1,16 @@
+{
+  "name": "campus-notification-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "logging_middleware",
+    "notification_app_be",
+    "notification_app_fe"
+  ],
+  "scripts": {
+    "stage1": "npm --workspace notification_app_be run start --",
+    "test": "npm --workspace notification_app_be run test",
+    "dev": "npm --workspace notification_app_fe run dev",
+    "build": "npm --workspace notification_app_fe run build"
+  }
+}
